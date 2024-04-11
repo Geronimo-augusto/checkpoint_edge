@@ -2,7 +2,7 @@
 - Ele indica com leds e com som o nível de luz do ambiênte
 - O led verde indica um nivel de luz aceitável
 - O led amarelo e o buzzer (aviso sonoro) indicam que a luminosidade está quase alta demais
-- O led vermelho e o buzzer (aviso sonoro) indicam que o nível de luz está criticamente demais
+- O led vermelho indica que o nível de luz está criticamente demais
 
 # Componentes
 - 1 Sensor LDR

@@ -1,30 +1,43 @@
-- O projeto consiste num detector de luminosidade com arduino, feito pro uso na vinheria Agnello
-- Ele indica com leds e com som o nível de luz do ambiênte
-- O led verde indica um nivel de luz aceitável
-- O led amarelo e o buzzer (aviso sonoro) indicam que a luminosidade está quase alta demais
-- O led vermelho indica que o nível de luz está criticamente demais
+Controle de Qualidade de Vinhos na Vinheria Agnello
+Este projeto visa auxiliar a Vinheria Agnello a garantir um melhor controle de qualidade de seus vinhos, permitindo um monitoramento mais eficaz da luminosidade em suas adegas.
 
-# Componentes
-- 1 Sensor LDR
-- 3 LEDs (verde, amarelo e vermelho)
-- 1 Buzzer
-- Arduino Uno (ou similar)
+Descrição do Projeto
+O projeto consiste em um sistema embarcado que utiliza um Arduino para monitorar os níveis de luz em uma adega. Com base nos níveis de luz detectados, o sistema aciona LEDs indicativos e um buzzer para alertar sobre condições de luminosidade inadequadas.
 
-# Pinos
-- Pino analógico A0: Conectado ao sensor LDR
-- Pinos digitais:
-  - 13: LED verde
-  - 12: LED amarelo
-  - 11: LED vermelho
-  - 7: Buzzer
+Dependências
+-Arduino IDE: Para compilar e carregar o código para o Arduino.
+-Arduino Uno (ou similar): O hardware para executar o código.
+-Componentes eletrônicos:
+ -LEDs (vermelho, amarelo, verde)
+ -Buzzer
+ -Sensor de Luz Dependente (LDR)
+ -Resistores (se necessário)
 
-# Inicialização
-- Conecte os pinos conforme descritos acima
-- Carregue o código para o arduíno
-- Execute o código e observe o comportamento dos LEDs e do buzzer de acordo com a intensidade de luz detectada pelo sensor LDR.
+Como Reproduzir
+1-Monte o circuito conforme o esquemático abaixo:
 
-## Observações
+ -Conecte os LEDs aos pinos 13, 12 e 11 do Arduino para vermelho, amarelo e verde, respectivamente.
+ -Conecte o buzzer ao pino 7 do Arduino.
+ -Conecte o sensor de luz dependente (LDR) ao pino analógico A0 do Arduino.
+ -Se necessário, utilize resistores para limitar a corrente nos LEDs e no buzzer.
+2-Abra o arquivo do código fonte (vinheria_control_qualidade_vinhos.ino) na Arduino IDE.
 
-- Certifique-se de ajustar os valores de mapeamento (map) de acordo com as características do seu sensor LDR e ambiente de uso.
+3-Verifique se as definições dos pinos estão corretas de acordo com o seu circuito.
 
+4-Compile o código e faça o upload para o Arduino.
 
+5-Após o upload, o Arduino começará a monitorar os níveis de luz na adega. Os LEDs e o buzzer serão acionados conforme necessário para indicar condições de luminosidade aceitáveis, de advertência ou perigosas.
+
+6-Monitore o comportamento do sistema e ajuste os limiares de luz conforme necessário para as condições específicas da adega da Vinheria Agnello.
+
+Contribuições e Melhorias
+ -O código pode ser expandido para incluir mais funcionalidades, como registro de dados, comunicação com um aplicativo ou sistema de controle centralizado.
+ -As definições dos limiares de luz podem ser ajustadas para se adequarem melhor às condições específicas da adega.
+ -Melhorias no hardware, como a adição de mais sensores, podem ser consideradas para um monitoramento mais abrangente.
+ -Observações
+ -Certifique-se de ajustar os valores de mapeamento (map) de acordo com as características do seu sensor LDR e ambiente de uso.
+
+ Um projeto da NextFuture para a Vinheria Agnello
+
+Autor: Grupo NextFuture
+integrantes{ Geronimo Augusto-557170, Mateus Lene-557803, Ana Laura-554375, Vitor Augusto-555469}

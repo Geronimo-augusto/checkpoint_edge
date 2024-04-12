@@ -14,21 +14,21 @@ O projeto consiste em um sistema embarcado que utiliza um Arduino para monitorar
  - Resistores (se necessário)
 
 ## Como Reproduzir
-1- Monte o circuito conforme o esquemático abaixo:
+1. Monte o circuito conforme o esquemático abaixo:
 
  - Conecte os LEDs aos pinos 13, 12 e 11 do Arduino para vermelho, amarelo e verde, respectivamente.
  - Conecte o buzzer ao pino 7 do Arduino.
  - Conecte o sensor de luz dependente (LDR) ao pino analógico A0 do Arduino.
  - Se necessário, utilize resistores para limitar a corrente nos LEDs e no buzzer.
-2- Abra o arquivo do código fonte (vinheria_control_qualidade_vinhos.ino) na Arduino IDE.
+2. Abra o arquivo do código fonte (vinheria_control_qualidade_vinhos.ino) na Arduino IDE.
 
-3- Verifique se as definições dos pinos estão corretas de acordo com o seu circuito.
+3. Verifique se as definições dos pinos estão corretas de acordo com o seu circuito.
 
-4- Compile o código e faça o upload para o Arduino.
+4. Compile o código e faça o upload para o Arduino.
 
-5- Após o upload, o Arduino começará a monitorar os níveis de luz na adega. Os LEDs e o buzzer serão acionados conforme necessário para indicar condições de luminosidade aceitáveis, de advertência ou perigosas.
+5. Após o upload, o Arduino começará a monitorar os níveis de luz na adega. Os LEDs e o buzzer serão acionados conforme necessário para indicar condições de luminosidade aceitáveis, de advertência ou perigosas.
 
-6- Monitore o comportamento do sistema e ajuste os limiares de luz conforme necessário para as condições específicas da adega da Vinheria Agnello.
+6. Monitore o comportamento do sistema e ajuste os limiares de luz conforme necessário para as condições específicas da adega da Vinheria Agnello.
 
 ## Contribuições e Melhorias
  - O código pode ser expandido para incluir mais funcionalidades, como registro de dados, comunicação com um aplicativo ou sistema de controle centralizado.
